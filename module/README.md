@@ -5,11 +5,11 @@ Provider Requirements:
 * **kubernetes:** (any version)
 
 ## Input Variables
-* `app_name` (required)
+* `deployment_name` (required)
 * `image` (required)
-* `port` (default `80`)
-* `replicas` (default `1`)
+* `port` (required)
+* `replicas` (required)
 
 ## Managed Resources
-* `kubernetes_deployment.app` from `kubernetes`
+* `kubernetes_deployment.example` from `kubernetes`
 
