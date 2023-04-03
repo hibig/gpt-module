@@ -18,7 +18,7 @@ resource "kubernetes_deployment" "example" {
   spec {
     selector {
       match_labels = {
-        app = var.deployment_name
+        App = var.deployment_name
       }
     }
 
@@ -27,7 +27,7 @@ resource "kubernetes_deployment" "example" {
     template {
       metadata {
         labels = {
-          app = var.deployment_name
+          App = var.deployment_name
         }
       }
 
