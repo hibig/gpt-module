@@ -6,7 +6,8 @@ Provider Requirements:
 
 ## Input Variables
 * `deployment_name` (required)
-* `image` (required)
+* `image_name` (required)
+* `port` (required)
 * `replicas` (required)
 
 ## Managed Resources
