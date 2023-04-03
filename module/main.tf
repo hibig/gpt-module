@@ -2,7 +2,7 @@ variable "deployment_name" {
   type = string
 }
 
-variable "image" {
+variable "image_name" {
   type = string
 }
 
@@ -33,7 +33,7 @@ resource "kubernetes_deployment" "example" {
 
       spec {
         container {
-          image = var.image
+          image = var.image_name
           name  = var.deployment_name
         }
       }
